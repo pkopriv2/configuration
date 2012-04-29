@@ -1,0 +1,66 @@
+snippet cl
+	// = Class: $1
+	//
+	// = Description: ${2}
+	//
+	var ${1:ClassName} = new Class({
+		${2}
+	});
+snippet cli
+	// = Class: $1
+	//
+	// = Description: ${2}
+	//
+	var ${1:ClassName} = new Class({
+		initialize: function(${3:args}) {
+			${4}
+		}
+	});
+snippet cle
+	// = Class: $1
+	// = Extends: $2
+	//
+	// = Description: ${3:description}
+	//
+	var ${1:ClassName} = new Class({
+		Extends: ${2:ParentClass}
+		${4}
+	});
+snippet clm
+	// = Class: $1
+	// = Implements: $2
+	// 
+	// = Description: ${3}
+	//
+	var ${1:ClassName} = new Class({
+		Implements: [${2:Mixins}]
+		${4}
+	});
+snippet clem
+	// = Class: $1
+	// = Extends: $2
+	// = Implements: $3
+	//
+	// = Description: ${4:descrption}
+	//
+	var ${1:ClassName} = new Class({
+		Extends: ${2:ParentClass},
+		Implements: [${3:Mixins}]
+		${5}
+	});
+snippet fn
+	// = Method: $1
+	// 
+	// = Description: ${3:description}
+	//
+	${1:method}: function(${2:args}) {
+		${4}
+	}
+snippet fni 
+	initialize: function(${1:args}) {
+		${2}
+	}
+snippet each
+	each(function(${1:item}) {
+		${2}
+	});
